@@ -1,0 +1,25 @@
+/*
+Theme Name: campbell Child
+description: >- campbell child theme
+Author: John Doe
+Author URI: https://example.com
+Template: campbell
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain: campbell-child
+*/
+#myCarousel-child {
+    margin-top: 20px;
+}
+.page-template-news-template .card-body a{
+    color: white !important;
+}
+.page-template-news-template .card-body a h5{
+    color: rgb(173, 39, 39);
+}
+.page-template-news-template .card-body a h5:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
