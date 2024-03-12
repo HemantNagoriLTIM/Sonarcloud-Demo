@@ -10,7 +10,7 @@ add_action( 'wp_enqueue_scripts', 'tp_child_scripts' );
 function latest_news($atts, $content = null) {
 	
 	global $post;
-	$i=4;
+	$i=3;
 	extract(shortcode_atts(array(
 		'num'     => '5',
 		'order'   => 'DESC',
@@ -80,7 +80,7 @@ add_shortcode('recent_news', 'latest_news');
 
 function movies_hollywood($atts, $content = null) {
 	global $wpdb;
-    $i = 4;
+    $i = 3;
     $post_type_query = " AND post_type = 'movie'";
     $hollywood_post = $wpdb->get_results(
         "SELECT *
@@ -147,3 +147,4 @@ add_shortcode('hollywood_movies', 'movies_hollywood');
 // Remove Gutenberg Block Editor
 
 add_filter('use_block_editor_for_post', '__return_false');
+
